@@ -1,0 +1,13 @@
+[package]
+name = "chess-rs"
+version = "0.1.0"
+description = "TUI-based chess game"
+authors = ["yewjung <yewjung@gmail.com>"]
+license = "MIT"
+edition = "2024"
+
+[dependencies]
+crossterm = "0.28.1"
+ratatui = "0.29.0"
+color-eyre = "0.6.3"
+derive_more = { version = "2.0.1", features = ["constructor"] }
