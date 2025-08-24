@@ -8,11 +8,10 @@ impl Piece for Pawn {
 
     fn to_string(&self) -> &'static str {
         "\
-        \n\
-        \n\
-      ▟█▙\n\
-      ▜█▛\n\
-     ▟███▙\n\
+           \n\
+         ▟█▙\n\
+         ▜█▛\n\
+        ▟███▙\n\
     "
     }
 }
