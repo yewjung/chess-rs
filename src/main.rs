@@ -137,11 +137,7 @@ impl App {
                         let piece_paragraph = Paragraph::new(piece.to_string())
                             .fg(piece.ratatui_color())
                             .alignment(Alignment::Center)
-                            .block(
-                                Block::new()
-                                    .padding(Padding::vertical(cell_area.height / 2))
-                                    .style(Style::default().bg(bg_color)),
-                            );
+                            .block(Block::new().style(Style::default().bg(bg_color)));
                         frame.render_widget(piece_paragraph, cell_area);
                     }
                     None => {
